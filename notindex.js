@@ -26,8 +26,8 @@ window.addEventListener('load', ()=>{
 
 })
 function getUsers(){
-    fetch("https://bscs3a-crud-api.onrender.com/api/members", {mode:"cors"})
-    //fetch("http://localhost:1001/api/employee", {mode:"cors"})
+    //fetch("https://bscs3a-crud-api.onrender.com/api/members", {mode:"cors"})
+    fetch("http://localhost:1001/api/employee", {mode:"cors"})
     .then((response)=>{
         console.log(response)
         return response.json()
